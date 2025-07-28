@@ -12,7 +12,7 @@ function App() {
     <>
       <Arun/>
       <h1>Hello Welcome</h1>
-      <div className="card">
+      <div>
         <button onClick={() => setCount((count) => count + 1)}>
           counter is {count}
         </button>
