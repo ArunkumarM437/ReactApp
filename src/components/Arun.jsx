@@ -13,13 +13,14 @@ function Arun() {
                     </button>
                 )}
                 {name === "Rengoku" && (
-                    // <img src="https://giffiles.alphacoders.com/222/222573.gif" alt="Rengoku" />
-                    <>
-                        <RengokuCard image="src\assets\213014.gif" name="Rengoku Fire" />
-                        <RengokuCard image="src\assets\219718.gif" name="Rengoku Fight" />
-                        <RengokuCard image="src\assets\221754.gif" name="Rengoku Scorching Sun" />
-                        <RengokuCard image="src\assets\223505.gif" name="Rengoku Flame" /></>
+                    <div className="card-wrapper">
+                        <RengokuCard image="src/assets/213014.gif" name="Rengoku Fire" />
+                        <RengokuCard image="src/assets/219718.gif" name="Rengoku Fight" />
+                        <RengokuCard image="src/assets/221754.gif" name="Rengoku Scorching Sun" />
+                        <RengokuCard image="src/assets/223505.gif" name="Rengoku Flame" />
+                    </div>
                 )}
+
 
             </div>
         </>
