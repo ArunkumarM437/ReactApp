@@ -6,21 +6,16 @@ import Arun from './components/Arun';
 import Footer from './components/common/Footer';
 
 function App() {
-  const [count, setCount] = useState(0)
-  const [name,setName] = useState("Change Name")
-
+  const [Inspiration,setName] = useState("Akaza")
   return (
     <>
       <Arun/>
-      <h1>Hello Welcome</h1>
+      <h1>Welcome to Rengoku</h1>
       <div>
-        <button onClick={() => setCount((count) => count + 1)}>
-          counter is {count}
+        <button onClick={()=> setName((name) => name = "Set Your Heart Ablaze")}>
+           Get Inspiration
         </button>
-        <button onClick={()=> setName((name) => name = "Arunkumar M")}>
-           Click Me
-        </button>
-        <h1>{name}</h1>
+        <h1>{Inspiration}</h1>
       </div>
       <Footer/>
     </>
