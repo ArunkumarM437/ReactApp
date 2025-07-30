@@ -67,30 +67,70 @@ button:focus-visible {
   }
 }
 
-.card {
-  max-width: 200px;
-  background-color:rgba(223, 235, 223, 0.401);
-  display: inline-block;
-  font-family: sans-serif;
-  font-style:oblique;
-  font-display: auto;
-  margin:auto ;
-  border-radius: 8px;
-  text-align: center;
-  overflow: auto;
-  
+/* Outer container with fire-colored background and animation */
+.rengoku-section {
+  background: linear-gradient(135deg, #ff4500, #ff6347, #ffa500);
+  padding: 40px 20px;
+  animation: fireGlow 4s ease-in-out infinite alternate;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 0 40px rgba(255, 69, 0, 0.3);
 }
-.card img{
-  width: 200px;
-  display: inline-block;
+
+/* Animate background glow */
+@keyframes fireGlow {
+  0% {
+    background: linear-gradient(135deg, #ff4500, #ff6347, #ffa500);
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.4);
+  }
+  100% {
+    background: linear-gradient(135deg, #ff6347, #ffa500, #ff4500);
+    box-shadow: 0 0 40px rgba(255, 69, 0, 0.6);
+  }
 }
+
+/* Card layout (keep this or your improved version) */
 .card-wrapper {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 21px;
   justify-content: center;
-  margin-top: 20px;
 }
+
+/* Card styling */
+.card {
+  width: 280px;
+  background-color: rgba(16, 193, 54, 0.1);
+  font-family: sans-serif;
+  font-style: oblique;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+/* Responsive image */
+.card img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    max-width: 90%;
+  }
+}
+
 
 .footer {
   position: fixed;
