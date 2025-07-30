@@ -1,14 +1,15 @@
-function RengokuCard(props){
-    return (
-        <>
-            <img src={props.image} alt="" />
-            <p>{props.imageDes}</p>
-        </>
-    );
+function RengokuCard({
+  image = "src/assets/213014.gif",
+  imageDes = "Rengoku - Flame Hashira",
+  quote = "No Matter What"
+}) {
+  return (
+    <div className="card">
+      <img src={image} alt={imageDes} />
+      <p>{imageDes}</p>
+      <p>{quote}</p>
+    </div>
+  );
 }
-RengokuCard.defaultProps = {
-    image : "src/assets/213014.gif",
-    imageDes : "Rengoku - Flame Hashira"
 
-}
 export default RengokuCard;
