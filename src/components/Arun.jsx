@@ -1,5 +1,4 @@
 import { useState } from "react";
-import RengokuCard from "./RengokuCard";
 import RengokuList from "./Rengoku/RengokuListView";
 
 function Arun() {
