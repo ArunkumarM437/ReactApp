@@ -101,7 +101,7 @@ button:focus-visible {
 /* Card styling */
 .card {
   width: 280px;
-  background-color: rgba(16, 193, 54, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   font-family: sans-serif;
   font-style: oblique;
   border-radius: 8px;
