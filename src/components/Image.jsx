@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 function RengokuCard({
   image = "src/assets/images/213014.gif",
   imageDes = "Rengoku - Flame Hashira",
@@ -22,6 +24,13 @@ function RengokuCard({
     );
   }
 
+}
+
+RengokuCard.propTypes = {
+  image : PropTypes.string,
+  imageDes : PropTypes.string,
+  quote : PropTypes.string,
+  show : PropTypes.bool
 }
 
 export default RengokuCard;
