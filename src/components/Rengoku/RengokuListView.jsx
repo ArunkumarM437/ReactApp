@@ -34,7 +34,7 @@ function RengokuList() {
             show: true
         }
     ]
-    const RengokuListItem = RengokuDetails.map((rengoku)=> <RengokuCard image={rengoku.image} imageDes={rengoku.imageDes} quote={rengoku.quote} show={rengoku.show}/>)
+    const RengokuListItem = RengokuDetails.map((rengoku , index)=> <RengokuCard key={index} image={rengoku.image} imageDes={rengoku.imageDes} quote={rengoku.quote} show={rengoku.show}/>)
     return (
         <>
             {RengokuListItem}
